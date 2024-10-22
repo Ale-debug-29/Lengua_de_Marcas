@@ -15,9 +15,12 @@
                 background-color:blanchedalmond;
                 border-color: black;
             }
-            .alingcenter {text-align:"center";}
-            .alingleft {text-align:"left";}
-            .alingright {text-align:"right";}
+            .alingcenter {text-align:center;}
+            .alingleft {text-align:left;}
+            .alingright {text-align:right;}
+            .alingmiddle {vertical-align:middle;}
+            .alingbottom {vertical-align:bottom;}
+            .alingtop {vertical-align:top;}
 
             
         </style>
@@ -29,14 +32,14 @@
             <th><B>FEBRERO</B></th>
             <th><B>MARZO</B></th>
         </tr>
-        <tr class=".alingcenter">
+        <tr class="alingcenter">
             <td>Todas alineadas al centro</td>
             <td>Celda 2</td>
             <td>Celda 3</td>
         </tr>
         <tr>
-            <td class=".alingright">alineados a la derecha</td>
-            <td class=".alingcenter">Alineados al centro</td>
+            <td class="alingright">alineados a la derecha</td>
+            <td class="alingcenter">Alineados al centro</td>
             <td>Por defecto alineado a la izquierda</td>
         </tr>
     </table>
@@ -48,20 +51,20 @@
             <th><B>FEBRERO</B></th>
             <th><B>MARZO</B></th>
         </tr>
-        <tr valign="top">
+        <tr class="alingtop">
             <td>Todas alineadas al arriba</td>
             <td>Celda 2</td>
             <td>Celda 3</td>
         </tr>
         <tr>
-            <td valing="top">alineados arriba</td>
-            <td valign="bottom">Alineados abajo</td>
-            <td valign="middle">Por defecto alineado a la centro</td>
+            <td class="alingtop">alineados arriba</td>
+            <td class="alingbottom">Alineados abajo</td>
+            <td class="alingmiddle">Por defecto alineado a la centro</td>
         </tr>
     </table>
     <hr>
     <br>
-    <table style="text-align: center;">
+    <table class="alingcenter">
         <tr>
             <th><b>celda 1</b></th>
             <th><B>celda 2</B></th>
