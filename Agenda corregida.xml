@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no"?>
+<!DOCTYPE agenda> 
+<agenda_de_contactos>
+	<contacto>
+		<!-- Ejemplo 1 --> 
+		<nombre>Carlos</nombre>
+		<apellido>Pérez Gutiérrez</apellido>
+		<dirección>Calle: San Domingo Nº23 > pta A</dirección>
+		<telefonos>
+			<telefono_casa>657456532</telefono_casa>
+			<telefono_movil>689574520</telefono_movil>
+			<telefono_trabajo>607346709</telefono_trabajo>
+		</telefonos>
+	</contacto>
+	<contacto>
+		<!-- Ejemplo 2 --> 
+		<nombre>Néstor</nombre>
+		<apellido>López Hérnandez</apellido>
+		<dirección>C.Principe 3 Nº15</dirección>
+		</telefonos>
+	</contacto>
+	<contacto>
+		<!-- Ejemplo 3 -->
+		<nombre>Denis</nombre>
+		<apellido>Morales Acosta</apellido>
+		<dirección>C.Pablo 4 Nº67</dirección>
+		<telefonos>
+			<telefono_casa>607536793</telefono_casa>
+			<telefono_movil>624579062</telefono_movil>
+			<telefono_trabajo>676542321</telefono_trabajo>
+		</telefonos>
+	</contacto>
+</agenda_de_contactos>

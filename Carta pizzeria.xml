@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE carta>
+<carta>
+	<pizzas>
+		<nombre tamaño="10 cm">Pizza Barbacoa
+		<ingredientes>
+			<ingrediente>salsa barbacoa</ingrediente>
+			<ingrediente>mozzarella</ingrediente>
+			<ingrediente>bacon</ingrediente>
+			<ingrediente>pollo</ingrediente>
+			</ingredientes>
+			<precio>10€</precio>
+		</nombre>
+		<nombre tamaño="25cm">Pizza Margarita
+		<ingredientes>
+			<ingrediente>tomate</ingrediente>
+			<ingrediente>jamon</ingrediente>
+			<ingrediente>queso</ingrediente>
+			</ingredientes>
+			<precio>8€</precio>
+			</nombre>
+		<nombre tamaño="30cm">Pizza tropical
+		<ingredientes>
+			<ingrediente>tomate</ingrediente>
+			<ingrediente>jamon</ingrediente>
+			<ingrediente>queso</ingrediente>
+			<ingrediente>piña</ingrediente>
+			</ingredientes>
+			<precio>8€</precio>
+			</nombre>
+	</pizzas>
+</carta>

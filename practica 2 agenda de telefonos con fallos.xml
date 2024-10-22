@@ -1,0 +1,36 @@
+<agenda>
+ <persona>
+  <nombre>Alexis</nombre>
+  <numero>456986378</numero>
+  <direccion>Domingo J manrique ... </direccion>
+  <C.P>38320</C.P>
+ </persona>
+ <persona>
+  <nombre>Pepito palotes</nombre>
+  <numero></numero>
+  <direccion>Mendez Nuñez..</direccion>
+  <C.P>38120</C.P>
+ </persona>
+ <persona>
+  <nombre>Maria</nombre>
+  <numero>789231245</numero>
+  <direccion>Los cristianos</direccion>
+  <C.P>38001</C.P>
+  </agenda>
+ </persona>
+ <persona>
+  <nombre>Maria</nombre>
+  <numero>789231245</numero>
+  <numero2>922243512</numero2>
+  <numero1>678345267</numero3>
+  <direccion>Los cristianos</direccion>
+  <C.P>38002</C.P>
+ <persona>
+  <nombre>Alberto<nombre/>
+  <numero>635785930</numero>
+  <direccion>Parque de la granja</direcion>
+ </persona>
+ </agenda>
+
+
+

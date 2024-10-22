@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vuelos>
+	<vuelo>
+		<numero>A32389</numero>
+		<compañia>Binter</compañia>
+		<plazas>
+			<total>50PAX</total>
+			<libres>25</libres>
+			<ocupadas>25</ocupadas>
+		</plazas>
+		<aeropuerto>
+			<lugar_salida>Barajas</lugar_salida>
+			<lugar_llegada>El Prats</lugar_llegada>
+				<fecha>
+				<hora_salida lugar="Madrid">12:30</hora_salida>
+					<fecha_salida> 13 de septiembre</fecha_salida>
+				<hora_llegada lugar="Barcelona">11:34</hora_llegada>
+					<fecha_llegada>14 septiembre</fecha_llegada>
+				</fecha>	
+		</aeropuerto>
+		<tripulacion personal="15 pesonas">
+			<piloto></piloto>
+				<nombre>Pachon</nombre>
+				<codigo>1123123123</codigo>
+			<copiloto></copiloto>
+				<nombre>Pepito</nombre>
+				<codigo>123123</codigo>
+			<auxiliares cantidad="3 empleados">
+				<auxiliar>
+					<nombre>Juan</nombre>
+					<codigo>12312412</codigo>
+				</auxiliar>
+				<auxiliar>
+					<nombre>Maria</nombre>
+					<codigo>1424124</codigo>
+				</auxiliar>
+				<auxiliar>
+					<nombre>Peloan</nombre>
+					<codigo>92828843</codigo>
+				</auxiliar>
+			</auxiliares>
+		</tripulacion>
+	</vuelo>
+
+
+
+
+
+
+
+
+
+
+
+</vuelos>

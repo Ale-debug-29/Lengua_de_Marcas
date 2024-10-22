@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tiendas>
+	<tienda>
+			<responsable>Alberto Chicote</responsable>
+			<direccion>
+				<ciudad>Madrid</ciudad>
+				<calle>Las Rozas</calle>
+				<numero>23</numero>
+				<C.P>32456</C.P>
+				<telefono>121323123</telefono>
+			</direccion>
+			<familia>
+				<codigo>1212312</codigo>
+				<nombre>quesos</nombre>
+				<productos>
+					<producto>
+						<codigo>1312</codigo>
+						<nombre>Valsequillo</nombre>
+						<stock>22 Unidades</stock>
+				    </producto>
+					<producto>
+						<codigo>1312</codigo>
+						<nombre>Valsequillo</nombre>
+						<stock>22 Unidades</stock>
+				    </producto>
+					</productos>	
+				</familia>	
+	</tienda>
+
+
+
+
+
+
+
+
+</tiendas>
