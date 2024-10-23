@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Practica 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 20px;
+        }
+        h1 {
+            text-align: left;
+        }
+        form {
+            text-align: left;
+        }
+        label {
+            display: block;     
+        }
+        input {
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        br {
+            margin-bottom: 10px;
+        }
+        a {
+            color: blue;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <!--El valor en el <style> denominado "label" utilizamos "display:block" para que los elementos aparezcan todas a la izquirda alineadas-->
+</head>
+<body>
+    <h1>Registro de Boletin de Noticias</h1>
+    <br><br />
+    <form action="Formulario" action="https://www3.gobiernodecanarias.org/medusa/evagd/laguna/pluginfile.php/1047804/mod_resource/content/0/5_HTML_Formularios.pdf" method="get">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" maxlengh="20" placeholder="Alexis" required>  <!--"placeholder" lo usaremos para colocar un texto en gris que se mostrara como ejemplo en el campo a rellenar pero que desaparecera al escribir-->                                                                           <!--"maxlengh" se utiliza para marcar el maximo de caracteres que podra introducir en el formulario ene ste campo-->                     
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido"  maxlengh="20" placeholder="Apellidos" required>
+        <label for="email">Correo Electronico:</label>
+        <input type="email" id="email" name="email"  placeholder="....@gmail.com" required>         <!--"input="email" se utilizara para que solo se pueda introducir caracteres tipo correo electronico al elemento y si no dara error-->
+        <label for="Pais">Pais: </label>
+        <select name="Pais" size="0">                                    <!--Select sirve para crear una lista de opcion de las que elegir una-->
+                                                                          <!--El atributo "size" sirve para mostrar un numero determinado de elementos de la lista directamente-->
+            <option value="">Seleccione su pais</option>
+            <option value="España">España</option>
+            <option value="USA">USA</option>
+            <option value="Australia">Australia</option>                <!-- <option value="España,USA,etc"> se utiliza para meter las opciones a elegir dentro del label "Pais" tipo "select" que hemos creado ariba-->
+            <option value="Canada">Canada</option>
+            <option value="China">China</option>
+            <option value="Francia">Francia</option>
+            <option value="Italia">Italia</option>
+            <option value="Japon">Japon</option>
+        </select>
+        <br><br />
+        <label for="Contacto"> ¿Como te enteraste de nosotros? </label>          <!--En este caso utilizaremos "label" para llamar al elemento de "Contacto"-->
+        <br><br />
+        <input type="radio" name="Contacto" value="Un amigo">Un amigo             <!--En el siguiente parrafo utilizaremos el input type="radio" para llamar a cada uno de los elementos de la lista que se mostraran con un circulo para sellecionar-->
+        <br><br />
+        <input type="radio" name="Contacto" value="Redes sociales">Redes Sociales
+        <br><br />
+        <input type="radio" name="Contacto" value="Busqueda en internet">Busqueda en internet
+        <br><br />
+        <label for="area">Comentarios adicionales: </label>
+        <textarea name="area" rows="7"></textarea>
+        <br><br />
+        <label for="Interes">Interes: </label>
+        <input type="checkbox" id="Interes1" name="Interes" value="Noticias">Tecnologia
+        <input type="checkbox" id="Interes2" name="Interes" value="Deportes">Salud
+        <input type="checkbox" id="Interes3" name="Interes" value="Tecnologia">Estilo de vida
+        <br><br />
+        <inp ut type=“submit”></inp>
+
+    </form>
+</body>
+</html>
