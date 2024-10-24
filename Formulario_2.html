@@ -32,6 +32,7 @@
         input[type="submit"]:hover {
             background-color: #45a049;
         }
+        textarea { border-radius: 5px; }
         br {
             margin-bottom: 10px;
         }
@@ -73,10 +74,13 @@
         <label for="Formulario"> <b>¿Como te enteraste de nosotros?</b> </label>
         <br>
         <h1>Comentarios adicionales: </h1>
-        <input type="radio" name="modo" value="Un amigo">Un amigo<br>
-        <input type="radio" name="modo" value="Un amigo">Redes Sociales<br>
+        <label for="Formulario" name="Un amigo"><b>Un amig</b></label>
+        <input type="radio" name="modo" id="Un amigo" value="Un amigo">o<br>
+        <label for="Formulario" name="Redes Sociales"><b>Redes Sociales</b></label>
+        <input type="radio" name="modo"  id="Un amigo" value="Un amigo">Redes Sociales<br>
+        <label for="Formulario" name="Busqueda"><b>Un amig</b></label>
         <input type="radio" name="modo" value="Un amigo">Busqueda en internet<br>
-
+        
         <textarea name="Comentarios" rows="5" cols="50" placeholder="Escribe aqui tus Comentarios"></textarea>
         <br></br>
         <label for="Formulario">Intereses</label><br>
