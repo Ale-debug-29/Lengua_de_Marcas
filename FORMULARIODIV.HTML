@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f46c;
+            margin: 70px;
+        }
+        h1 {
+            text-align: left;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 40px;
+        }
+        fieldset {
+            border: 1px solid gray;
+            padding: 10px;
+        }
+        legend {
+            font-weight: bold;
+        }
+        .form-group {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin-bottom: 5px;
+        }
+        .form-group label {
+            flex: 1;
+            border-radius: 5px;
+        }
+        .form-group input, .form-group select {
+            flex: 1;
+            padding: 10px;
+        }
+        
+        input[type="submit"] {
+            background-color: hsla(132, 9%, 11%, 0.745);
+            color:black;
+            border: 1px solid black ;
+            cursor: pointer;
+            padding: 1px ;
+        }
+        input[type="submit"]:hover {
+            background-color: #112e1213;
+        }
+    </style>
+<!--El atributo gap: 20px agrega 20px de espacio entre los elementos 
+        internos del contenedor flex o grid, mejorando la separación y 
+        legibilidad ----> 
+<!--font-weight: bold; este atributo aplica una tipo de letra en negrita en este caso para todos los titulos que estan en legend-->
+<!-- :hover Cambia el color de fondo del botón de envío (submit) cuando el usuario pasa el cursor
+        sobre él (hover). En este caso, el color de fondo cambia a un tono translúcido(#09200a13)
+        para dar una retroalimentación visual de interacción es un seudo-clase que aplica estilos cuando el usuario pasa 
+        el cursor sobre un elemento, útil para destacar elementos interactivos-->
+<!--cursor: pointer; cambia el cursor a una mano cuando pasa sobre el botón,
+        indicando que es clicable e interactivo para el usuario -->
+<!--display: flex; establece el contenedor como un contenedor flex,
+        permitiendo organizar sus elementos hijos en una sola dirección
+        (fila o columna) y gestionar su alineación y espacio de forma eficiente.
+        Los elementos dentro del contenedor se organizan por defecto en 
+        una fila (row) -->
+<!--flex-direction: column; organiza los elementos dentro del contenedor
+        flex en una columna, apilándolos de arriba hacia abajo en lugar de 
+        de izquierda a derecha-->
+<!--flex-direction: row; organiza los elementos dentro del contenedor
+        flex en una fila, apilándolos de izquierda a derecha en lugar de 
+        de arriba hacia abajo-->
+ <!--flex: 1; permite que el elemento ocupe el espacio disponible en el contenedor,
+       ajustándose automáticamente junto con otros elementos flexibles-->
+<!--padding: 8px; agrega espacio interior de 8px alrededor del contenido del input y select,
+       mejorando la legibilidad y estética del formulario-->
+<!--font-size: 1em; establece el tamaño de la fuente al 100% del tamaño de fuente del contenedor,
+        manteniendo un estilo de texto coherente-->
+</head>
+<body>
+    <h1><b>Formulario registro completo</b></h1>
+    <form name="Formulario" action="https://www3.gobiernodecanarias.org/medusa/evagd/laguna/pluginfile.php/1047804/mod_resource/content/0/5_HTML_Formularios.pdf" method="post">
+        <fieldset>
+            <legend>Información de Cuenta</legend>
+            <div class="form-group">
+                <label for="usuario">Nombre de usuario:</label>
+                <input type="text" id="usuario" name="usuario" maxlength="10" placeholder="Alersis90" required>
+                <label for="Contraseña">Contraseña:</label>
+                <input type="password" id="Contraseña" name="Contraseña" required>
+            </div>
+            <div class="form-group">
+                <label for="nacimiento">Fecha de Nacimiento:</label>
+                <input type="date" id="nacimiento" name="nacimiento" required>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" maxlength="9" placeholder="654321098" required>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferencias</legend>
+            <div class="form-group">
+                <label for="intereses">Selecciona tus intereses:</label>
+                <select id="intereses" name="selecciona tus intereses">
+                    <option value="0">Seleccione tus intereses</option>
+                    <option value="Tecnologia">Tecnología</option>
+                    <option value="Salud">Salud</option>
+                    <option value="Estilo de vida">Estilo de vida</option>
+                    <option value="Viajes">Viajes</option>
+                </select>
+                <label for="number">Número (entre 1 y 100):</label>
+                <input type="number" id="number" name="number" min="1" max="100" required title="Debe estar entre 1 y 100">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferencias de contacto</legend>
+            <div class="form-group">
+                <label for="¿Como prefieres que te contacten?">¿Como prefieresque te contacten?</label>
+            </div>
+            <div class="form-group">
+                <input type="radio" id="email" name="Preferencias de contacto" value="Correo electronico">
+                <label for="email">Correo electrónico</label>
+                <input type="radio" id="telefono" name="Preferencias de contacto" value="Por Telefono">
+                <label for="telefono">Por teléfono</label>
+                <input type="radio" id="whatsapp" name="Preferencias de contacto" value="Por whatsup">
+                <label for="whatsapp">Por WhatsApp</label>
+                <input type="radio" id="telegram" name="Preferencias de contacto" value="Por Telegram">
+                <label for="telegram"> Por Telegram</label>
+            </div>
+        </fieldset>
+        <input type="submit" value="Registrarse">
+    </form>
+</body>
+</html>
