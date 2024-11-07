@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cajas</title>
+    <style>
+        div{
+            display:block;
+        }
+        fieldset{
+            border: 1px solid black;  
+        } 
+        .divlista{
+            text-align: center;
+            display: flex;
+            justify-content: center; /* Centrado horizontal */
+            align-items: center;/* Centrado vertical */
+            font-family: Arial, Helvetica, sans-serif;
+            color:#e62adc;
+            font-weight: bold; 
+        }
+           
+        /*Para que una imagen se adapte al tamaño de la caja utilizaremos el overflo:auto;*/
+        .imagen{ 
+            float: left;
+            width: 100px; /* Cambia el tamaño según necesites */
+            height: auto; /* Mantiene la proporción */
+        }
+        .titulo1 {
+            text-align: center;
+            display: flex;
+            justify-content: center; /* Centrado horizontal */
+            align-items: center;/* Centrado vertical */
+            font-family: Arial, Helvetica, sans-serif;
+            color: #b1e22bb6; 
+            }
+        .fielset1 {
+            background-color: bisque;
+            margin: 50px; /*Esto quiere decir que arriba y abajo 50 y en los laterales 0*/
+            color:blueviolet;
+          }
+        .fielset2 {
+            background-color: white;
+            margin:  50px 0px;
+            border: 3px solid #e62adc;
+            padding: 30px 0px;
+        
+        }
+          .titulo2 {
+            text-align: center;
+            display: flex;
+            justify-content: center; /* Centrado horizontal */
+            align-items: center;/* Centrado vertical */
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+            font-weight: bold;
+            color:black;
+            font-size: 20px; 
+        }
+        .ul{    
+            list-style-type: square;
+            padding-left: 70px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            color: green;
+            ;
+        }
+
+/*Para que una imagen se adapte al tamaño de la caja utilizaremos el overflo:auto;*/
+    </style>
+</head>
+<body>
+<fieldset class="fielset1">
+    <div class="titulo1"><b>Caja 1</b></div>
+    <img src="6_imagenCaja1.jpg" class="imagen"></img>
+    <div>Esta es la primera caja de esta Web y ahora estas leyendo tu primer parrafo</div>
+    <div>Segundo parrafo de la primera caja</div>
+    <div>Este es su tercer parrafop y tambien tiene una imagen a la izquierda</div>
+</fieldset>
+<fieldset class="fielset2">
+    <div class="titulo2">Caja 2</div>
+    <div class="divlista">Esta seccion tambien lo empezare por un parrafo, pero a diferencia de la anterior voy a seguirla con una lista: </div>
+    <div>
+        <ul class="ul">
+            <li>Primer elemento de la lista</li>
+            <li>Segundo elemento de la lista</li>
+            <li>Tercero elemento de la lista</li>
+            <li>Cuarto elemento de la lista</li>
+        </ul>
+</div>
+</fieldset>
+</body>
+</html>
