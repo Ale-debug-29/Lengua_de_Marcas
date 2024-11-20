@@ -1,0 +1,41 @@
+
+    .ul1 li{
+        blist-style: none;
+        text-align: center;
+        width: 140px;
+        padding: 5px 0px 5px 0px;
+        border: solid black 1px;
+        display: block;
+        text-decoration: none;
+        background-color: gray;
+    }
+
+    .ul2 li{
+        blist-style: none;
+        text-align: center;
+        float:left;
+        width: 140px;
+        padding: 5px 0px 5px 0px;
+        border: solid black 1px;
+        display: block;
+        text-decoration: none;
+    }
+    .ul3{
+        display: none;
+        position: absolute;
+        
+    }
+li:hover .ul3{
+    display:block;
+    
+}
+
+/*Le pondremos display: none; al menú que está dentro de los elementos del menu ( ul ul ) para que inicialmente no se vean.
+    Asignar display: block; al menú que está en el elemento de la lista sobre el que estamos pasando el ratón ( li:hover > ul )
+    Si quiero que se vea el primer menú completo y los submenús debajo en el caso del menú horizontal Aplícale al submenú la propiedad position :absolute para que se visualice en relación al superior que tenga con position:relative que se lo aplicaremos a los elementos del menú inicial.
+    En el caso de un menú vertical, Si quiero que se vea el primer menú completo y los submenús estén a la derecha del anterior: Aplícale al submenú la propiedad position :absolute y left:100% para que se visualice en relación al superior que tenga con position:relative que se lo aplicaremos a los elementos del menú inicial. 
+    Prof. Beatriz Pérez Martínez dice:ul.menuHorizontal > li {  /* si no se le pone el >  tambien se lo aplica a los li del submenu */
+
+    /*--
+    {  /* si no se le pone el >  tambien se lo aplica a los li del submenu*/
+		
