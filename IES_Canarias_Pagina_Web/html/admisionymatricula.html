@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admisionymatricula</title>
+    <link rel="stylesheet" href="../css/section.iframe.css">
+</head>
+<body>
+    <section class="form-container">
+        <h1>Formulario de Matriculación en los módulos</h1>
+
+        <form  name="formulario" action="../html/general.html" method="post">
+            <div>
+                <label for="nombre" class="label">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" maxlength="15"  placeholder="Escriba aqui su nombre" required>
+
+                <label for="apellidos" class="label">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos" maxlength="15"  placeholder="Escriba aqui su apellido" required>
+
+                <label for="sexo" class="label">Sexo:</label>
+                <input type="radio" id="m" name="sexo" value="M">
+                <label for="m">Mujer</label>
+                <input type="radio" id="h" name="sexo" value="H">
+                <label for="h">Hombre</label>
+            </div>
+
+            <div">
+                <label for="nacimiento" class="label">Fecha de Nacimiento:</label>
+                <input type="date" id="nacimiento" name="nacimiento" required>
+                <label for="telefono" class="label">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" maxlength="9" placeholder="Escriba aqui su telefono" required>
+            </div>
+            </div>
+
+            <div class="modulos">
+                <label for="modulos" class="label">Escoge los módulos en los que te matriculas:</label>
+                <div class="modules-grid">
+                    <div>
+                        <input type="checkbox" id="modulo1" name="modulo1" value="Fundamentos de Hardware">
+                        <label for="modulo1">Fundamentos de Hardware</label><br>
+                        <input type="checkbox" id="modulo2" name="modulo2" value="Gestión de Base de Datos">
+                        <label for="modulo2">Gestión de Base de Datos</label><br>
+                        <input type="checkbox" id="modulo3" name="modulo3" value="Implantación de Sistemas Operativos">
+                        <label for="modulo3">Implantación de Sistemas Operativos</label><br>
+                        <input type="checkbox" id="modulo4" name="modulo4" value="Planificación y Administración de Redes">
+                        <label for="modulo4">Planificación y Administración de Redes</label><br>
+                        <input type="checkbox" id="modulo5" name="modulo5" value="Lenguajes de Marcas y Sistemas de Gestión de Información">
+                        <label for="modulo5">Lenguajes de Marcas y Sistemas de Gestión de Información</label><br>
+                        <input type="checkbox" id="modulo6" name="modulo6" value="Formación y Orientación Laboral">
+                        <label for="modulo6">Formación y Orientación Laboral</label><br>
+                        <input type="checkbox" id="modulo7" name="modulo7" value="Proyecto de Administracion de Sistemas Informaticos en Red">
+                        <label for="modulo6">Proyecto de Administracion de Sistemas Informaticos en Red</label><br>
+                        <input type="checkbox" id="modulo8" name="modulo8" value="Programacion">
+                        <label for="modulo6">Programacion</label><br>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="modulo9" name="modulo9" value="Servicios de Red en Internet">
+                        <label for="modulo7">Servicios de Red en Internet</label><br>
+                        <input type="checkbox" id="modulo10" name="modulo10" value="Administracion de Sistemas Operativos">
+                        <label for="modulo8">Administracion de Sistemas Operativos</label><br>
+                        <input type="checkbox" id="modulo11" name="modulo11" value="Implantacion de Aplicaciones Web">
+                        <label for="modulo9">Implantacion de Aplicaciones Web</label><br>
+                        <input type="checkbox" id="modulo12" name="modulo12" value="Administracion de Sistemas Gestores de Bases de Datos">
+                        <label for="modulo10">Administracion de Sistemas Gestores de Bases de Datos</label><br>
+                        <input type="checkbox" id="modulo13" name="modulo13" value="Seguridad y Alta Disponibilidad">
+                        <label for="modulo11">Seguridad y Alta Disponibilidad</label><br>
+                        <input type="checkbox" id="modulo14" name="modulo14" value="Empresa e Iniciativa Emprendedora">
+                        <label for="modulo12">Empresa e Iniciativa Emprendedora</label><br>
+                        <input type="checkbox" id="modulo14" name="modulo14" value="Formacion en Centros de Trabajo">
+                        <label for="modulo12">Formacion en Centros de Trabajo</label><br>
+                    </div>
+                </div>
+            </div>
+            <div class="estudiosprevios">
+                <label for="Estudios previos" class="label">Estudios previos: </label>
+                <textarea name="Estudios previos" rows="3" cols="10"></textarea>
+            </div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Restablecer">
+        </form>
+    </section>
+</body>
+</html>

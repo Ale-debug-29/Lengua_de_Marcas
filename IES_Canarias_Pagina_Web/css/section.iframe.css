@@ -1,0 +1,141 @@
+/*General*/
+section {
+    grid-column: 2/4;
+    grid-row: 2/4;
+    background-color: orange;  
+    
+ 
+}
+section.main-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+iframe {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Contacto*/
+
+table {
+    width: 35%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/*Calendario*/
+
+section img{
+    margin-left: 40%;
+}
+
+/*consejo escolar*/
+
+.table-miembros{
+    width: 100%;
+    height: 300px;
+    border-collapse: collapse;
+    text-align: left;
+    display: flex;
+    flex-direction: row-reverse;
+    border-collapse: separate; /* Importante: 'separate' permite aplicar el border-spacing */
+    border-spacing: 30px; 
+}
+
+/*Formulario*/
+.form-container {
+    margin: 20px;
+    padding: 20px;
+    background-color:orange;
+    border-radius: 8px;
+}
+
+/* Título  formulario*/
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos para los inputs y selects del fromulario */
+input[type="text"], input[type="radio"], input[type="checkbox"], select {
+    margin: 10px 0;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+input[type="text"], select {
+    width: 200px;
+}
+
+/* Etiquetas  de formulario*/
+.label {
+    font-weight: bold;
+}
+
+/* Estilo para los módulos  del formulario*/
+.modulos {
+    margin-top: 20px;
+}
+
+.modules-grid {
+    margin-top: 20px;
+    display: grid;/* Activamos el modelo de diseño Grid para el contenedor */
+    grid-template-columns: 1fr 1fr;/*1fr: Cada columna ocupa 1 fracción del espacio disponible. */
+    gap: 20px;   /* Definimos un espacio de 20 píxeles entre filas y columnas */
+}
+
+/*Textarea*/
+.estudiosprevios{
+    margin-top: 20px;   
+}
+textarea{
+display: block;
+}
+
+
+/*Profesores*/
+.h1{
+display: block;
+}
+p{
+text-align: center;
+font-weight: bold;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.div{
+width: 10%;
+}
+
+/* Estilo para los botones de enviar y restablecer */
+input[type="submit"] {
+    background-color: #2d6a4f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: #1b5e3c;
+}
+input[type="reset"] {
+    background-color: #2d6a4f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+input[type="reset"]:hover {
+    background-color: #1b5e3c;
+}
