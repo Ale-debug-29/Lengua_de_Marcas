@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body { font-size: 20px; }
+		fieldset { display: flex; justify-content: space-between; }
+		
+        .boton { font-size: 20px; background-color: gray; }
+		
+        .input-field { width: 100%; padding: 10px; } 
+		.input-numero {width:100%; height:20px; padding: 10px;}
+        .container { display: flex; justify-content: space-between;}
+        .item {  margin-right: 10px; margin-bottom: 15px; flex: 1; display: flex; }
+		.radio {  margin-right: 10px; }
+/*container es una fila y el item es una celda*/
+
+    </style>
+</head>
+<body>
+    
+
+</head>
+<body>
+    <h1><b>Formulario registro completo</b></h1>
+    <form name="Formulario" action="https://www3.gobiernodecanarias.org/medusa/evagd/laguna/pluginfile.php/1047804/mod_resource/content/0/5_HTML_Formularios.pdf" method="post">
+        <fieldset>
+            <legend>Información de Cuenta</legend>
+        <div class="container" >
+            <div class="item">
+                <label for="usuario">Nombre de usuario:</label>
+                <input type="text" id="usuario" name="usuario" maxlength="10" placeholder="Escribe tu nombre" required>
+            </div>
+            <div class="item">
+                <label for="Contraseña">Contraseña:</label>
+                <input type="password" id="Contraseña" name="Contraseña" required placeholder="Escribe tu Contraseña">
+            </div>
+        </div>
+        <div class="container">
+            <div class="item">
+                <label for="nacimiento">Fecha de Nacimiento:</label>
+                <input type="date" id="nacimiento" name="nacimiento" required>
+            </div>
+            <div class="item">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" maxlength="9" placeholder="654321098" required>
+            </div>
+            </div>
+        </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferencias</legend>
+            <div class="form-group">
+                <label for="intereses">Selecciona tus intereses:</label>
+                <select id="intereses" name="selecciona tus intereses">
+                    <option value="0">Seleccione tus intereses</option>
+                    <option value="Tecnologia">Tecnología</option>
+                    <option value="Salud">Salud</option>
+                    <option value="Estilo de vida">Estilo de vida</option>
+                    <option value="Viajes">Viajes</option>
+                </select>
+                <label for="number">Número (entre 1 y 100):</label>
+                <input type="number" id="number" name="number" min="1" max="100" required title="Debe estar entre 1 y 100">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferencias de contacto</legend>
+            <div class="form-group">
+                <label for="¿Como prefieres que te contacten?">¿Como prefieresque te contacten?</label>
+            </div>
+            <div class="form-group">
+                <input type="radio" id="email" name="Preferencias de contacto" value="Correo electronico">
+                <label for="email">Correo electrónico</label>
+                <input type="radio" id="telefono" name="Preferencias de contacto" value="Por Telefono">
+                <label for="telefono">Por teléfono</label>
+                <input type="radio" id="whatsapp" name="Preferencias de contacto" value="Por whatsup">
+                <label for="whatsapp">Por WhatsApp</label>
+                <input type="radio" id="telegram" name="Preferencias de contacto" value="Por Telegram">
+                <label for="telegram"> Por Telegram</label>
+            </div>
+        </fieldset>
+        <input type="submit" value="Registrarse">
+    </form>
+</body>
+</html>
+</body>
+</html>

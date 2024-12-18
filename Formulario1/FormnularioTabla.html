@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+   <!--El "display block sirve para que todos los datos que metamos, si queremos que todos se nos muestr seguidos lo anularemos-->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f46c;
+            margin: 20px;
+        }
+        h1 {
+            text-align: left;
+        }
+        form {
+            text-align: left;
+        }
+        input[type="submit"] {
+            background-color: hsla(132, 9%, 11%, 0.745);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #09200a13;
+        }
+        
+    </style>
+     
+</head>
+<body>
+    <h1><b>Formulario registro completo</b></h1>
+    <br></br>                                               <!--JESUS ALEXIS DENIZ AFONSO--> 
+    <form  name="Formulario" action="https://www3.gobiernodecanarias.org/medusa/evagd/laguna/pluginfile.php/1047804/mod_resource/content/0/5_HTML_Formularios.pdf" method="post">
+    <br>
+    <fieldset>
+        <legend>Informacion de Cuenta</legend>
+    <label for="Formulario" name="usuario">Nombre de usuario: </label>
+        <input type="text" id="usuario" name="usuario" maxlength="10" placeholder="Alersis90" required>
+    <label for="Formulario" name="Contraseña">Contraseña :</label>
+        <input type="password" id="Contraseña" name="Contraseña" required>
+    <label for="Formulario" name="nacimiento">Fecha de Nacimiento: </label>
+        <input type="date" id="nacimiento" name="nacimiento" required>
+    <label for="Formulario">Telefono:</label>
+        <input type="tel" id="telefono" name="telefono" maxlength="9" placeholder=" 654321098" required>
+    </fieldset>
+    <fieldset>
+        <legend>Preferencias</legend>
+        <select name="selecciona tus intereses">
+            <option value="0">Seleccione tus intereses</option> <!--Ponemos en la primera opcion la "selleccione pais para que se vea ene l formnualrio"-->
+            <option value="Tecnologia">Tecnologia</option>
+            <option value="Salud">Salud</option>
+            <option value="Estilo de vida">Estilo de vida</option>
+            <option value="Viajes">Viajes</option>
+            <br></br>
+        </select>
+        <label for="Formulario" name="number">Numero (entre 1 y 100) : </label>
+            <input type="number" id="number" name="number" min="1" max="100"  required title="Debe estar entre 1 y 100"><br>
+    </fieldset><br> 
+    
+    <fieldset>
+            <Legend>Preferencias de contacto</Legend>
+            <input type="radio" name="Preferencias de contacto" value="Correo electronico">Correo electronico
+            <input type="radio" name="Preferencias de contacto" value="Por Telefono">Por telefono
+            <input type="radio" name="Preferencias de contacto" value="Por whatsup">Por whatsap
+            <input type="radio" name="Preferencias de contacto" value="Por Telegram">Telegram
+    </fieldset>
+<br>
+    <input type="submit" value="Registrarse">
+   
+
+
+
+            
+    </form>
+</body>
+</html>
