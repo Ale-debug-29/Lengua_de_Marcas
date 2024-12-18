@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <style>
+            body {background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-LBK7XwrIXEarjJ3z-MxjtE6R-eGpX1qOvg&s);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;    
+        }
+            table, th, td {
+                height: 35px;
+                border: 1px solid black;
+            }
+            th, td { 
+                background-color:blanchedalmond;
+                border-color: black;
+            }
+            .alingcenter {text-align:center;}
+            .alingleft {text-align:"left";}
+            .alingright {text-align:right;}
+            .alingtop {text-align:top;}
+            .alingbottom {text-align:bottom;}
+            .alingmiddle {vertical-align:middle;}
+
+
+            
+        </style>
+    </head>
+<body>
+    <table>
+        <tr>
+            <th><b>ENERO</b></th>
+            <th><B>FEBRERO</B></th>
+            <th><B>MARZO</B></th>
+        </tr>
+        <tr class="alingcenter">
+            <td>Todas alineadas al centro</td>
+            <td>Celda 2</td>
+            <td>Celda 3</td>
+        </tr>
+        <tr>
+            <td class="alingright">alineados a la derecha</td>
+            <td class="alingcenter">Alineados al centro</td>
+            <td>Por defecto alineado a la izquierda</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <table>
+        <tr>
+            <th><b>ENERO</b></th>
+            <th><B>FEBRERO</B></th>
+            <th><B>MARZO</B></th>
+        </tr>
+        <tr class="top">
+            <td>Todas alineadas al arriba</td>
+            <td>Celda 2</td>
+            <td>Celda 3</td>
+        </tr>
+        <tr>
+            <td class="top">alineados arriba</td>
+            <td class="bottom">Alineados abajo</td>
+            <td class="middle">Por defecto alineado <br>a la centro</td>
+
+        </tr>
+    </table>
+    <hr>
+    <br>
+    <table class="center">
+        <tr>
+            <th><b>celda 1</b></th>
+            <th><B>celda 2</B></th>
+            <th><B>celda 3</B></th>
+            <th><B>celda 4</B></th>
+        </tr>
+        <tr>
+            <td rowspan="3">celda 5</td>
+            <td>Celda 6</td>
+            <td colspan="2">Celda 7</td>
+        </tr>
+        <tr>
+            <td>celda 8</td>
+            <td>celda 9</td>
+            <td rowspan="2">celda 10</td>
+        </tr>
+        <tr>
+            <td colspan="2">celda 11</td>
+        </tr>
+    </table>
+</body>
+</html>

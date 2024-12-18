@@ -1,0 +1,19 @@
+
+body{ 
+    background-color:pink;
+    background-image: url(fondo.jpeg);} 
+header{ 
+    width: 50%;
+}
+nav{
+    background-color:red;
+    width:10%;
+ }
+ section {
+    background-color:green;
+    width:90%;}
+ footer{ 
+    background-color:yellow; }
+ nav, section{
+    height:500px;
+    float: left;}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="../../CSS/ejer2/Form_JesusAlexisDenizAfonso.css">
+</head>
+<body>
+    <h1>Formulario sobre Videojuegos: Jesus Alexis Deniz Afonso</h1>
+
+<form action="https://www3.gobiernodecanarias.org/medusa/evagd/laguna/course/view.php?id=17334" method="get" >
+    <fieldset>
+    <div>
+        <label for="nombre">Nombre del juego: </label>
+        <br>
+        <input type="text" id="nombre" name="nombre" malength="50" placeholder="Introduce el nombre del juego" required>
+        <br>
+        <label for="fecha_lanzamiento">Fecha de lanzamiento: </label>
+        <br>
+        <input type="date" id="fecha_lanzamiento" name="fecha_lanzamiento">
+        <br>
+        <label for="Plataforma">Plataforma</label>
+        <br>
+        <select name="Plataforma">
+            <option value="defecto">Seleccione Plataforma </option>
+            <option value="xbox">Xbox </option>
+            <option value="playstation">Playstation </option>
+            <option value="Pc">Pcs </option>
+        </select>
+        <br><br>
+        <fieldset>
+            <legend>Categoria</legend>
+            <label for="Accion">Accion</label>
+            <input type="radio" id="Accion" name="Accion">
+            <label for="Accion">Aventura</label>
+            <input type="radio" id="aventura" name="aventura">
+            <label for="Accion">Deportes</label>
+            <input type="radio" id="deportes" name="deportes">
+        </fieldset>
+    </div>
+    <br>
+    <div class="div.float-right">
+        <label for="email">¿Quieres recibir novedades sobre videoujuegos? </label>
+        <br>
+        <input type="email" id="email" name="email" placeholder="Tu correo electronico">
+        <br>
+        <label for="multijugador">¿Es multijugador?</label>
+        <br>
+        <input type="checkbox" id="multijugador" name="multijugador">
+        <br>
+        <label for="precio">Precio: </label>
+        <br>
+        <input type="number" id="precio" name="precio" max="100" min="10"  placeholder="Introduce el precio del juego"required>
+        <br>
+        <label for="comentarios">Comentarios:  </label>
+        <br>
+        <textarea name="comentarios" rows="4" cols="50"></textarea>
+    </div>
+    <br>
+    <div> <input type="submit" id="enviar" name="enviar" value="Enviar"></div>
+</fieldset>
+</form>
+</body>
+</html>

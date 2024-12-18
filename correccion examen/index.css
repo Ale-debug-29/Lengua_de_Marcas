@@ -1,0 +1,10 @@
+.marco-foto{
+    border: 2px solid brown;
+    display: flex;
+    justify-content: end;
+    color: brown;
+}
+body div img{
+    display:flex;
+    justify-content: end;
+}

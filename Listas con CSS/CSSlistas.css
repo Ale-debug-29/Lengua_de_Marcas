@@ -1,6 +1,6 @@
 
     .ul1 li{
-        blist-style: none;
+        list-style: none;
         text-align: center;
         width: 140px;
         padding: 5px 0px 5px 0px;
@@ -10,8 +10,8 @@
         background-color: gray;
     }
 
-    .ul2 li{
-        blist-style: none;
+    .ul2 > li{
+        list-style: none;
         text-align: center;
         float:left;
         width: 140px;
@@ -19,16 +19,30 @@
         border: solid black 1px;
         display: block;
         text-decoration: none;
+        position: relative;
     }
-    .ul3{
+    .ul3 > li{
+        /*position: absolute;*/
+        list-style: none;
+        text-align: center;
+        width: 140px;
+        padding: 5px 0px 5px 0px;
+        border: solid black 1px;
+        text-decoration: none;
+        
+    }
+    ul ul{
         display: none;
         position: absolute;
         
+
     }
-li:hover .ul3{
-    display:block;
-    
-}
+    li:hover > ul{
+        display:block; 
+        
+    }
+
+
 
 /*Le pondremos display: none; al menú que está dentro de los elementos del menu ( ul ul ) para que inicialmente no se vean.
     Asignar display: block; al menú que está en el elemento de la lista sobre el que estamos pasando el ratón ( li:hover > ul )

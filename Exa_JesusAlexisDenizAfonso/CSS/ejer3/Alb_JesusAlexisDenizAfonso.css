@@ -1,0 +1,30 @@
+fieldset{
+    border: 2px solid brown;
+    text-align: right;
+    
+}
+fieldset h1 {
+    text-align: right;
+}
+fieldset img{
+    float: right;
+    width: 120px;
+}
+h1{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: brown;
+    font-size: 2em;
+}
+p{
+    font-size: 1em;
+}
+div{
+    border: 2px solid brown;
+}
+div img{
+    border: 1px solid black;
+    width:170px;
+    height: 140px;
+    
+}

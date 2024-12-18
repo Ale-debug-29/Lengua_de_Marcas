@@ -1,0 +1,84 @@
+/* Estilo para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: pink; /* Fondo rosa */
+    margin: 1;
+    padding: 1;
+}
+
+/* Cabecera */
+header img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho */
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    height: calc(100vh - 60px); /* Para que ocupe toda la pantalla menos la cabecera */
+    /* 
+   La propiedad height establece la altura del elemento utilizando la función calc().
+   - 100vh: Representa el 100% de la altura visible del navegador (viewport).
+   - - 60px: Resta 60 píxeles de esa altura total.
+   Uso común: Adaptar la altura del elemento dejando espacio para un encabezado, 
+   barra de navegación u otro elemento fijo.
+   Ejemplo: Si el viewport tiene 800px de alto, la altura será 740px (800px - 60px).
+*/
+}
+
+/* Menú lateral */
+.menu {
+    background-color: #f2f2f2;
+    width: 300px;
+}
+
+.menu ul {
+    list-style: none;
+
+    
+}
+
+.menu li {
+    font-size: medium;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    text-align: center;
+}
+.menu li:hover{
+    background-color: orange;
+}
+.menu a {
+    text-decoration: none;
+    color:grey;
+    font-weight: bold;
+}
+.menu a:hover {
+    color: red; /* Cambia de color al pasar el ratón */
+}
+/* Contenido central */
+.main-content {
+    flex-grow: 1;
+    background-color: orange; /* Fondo naranja */
+    padding: 20px;
+    overflow: hidden;
+    display: flex;
+}
+section.main-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+iframe {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Pie de página */
+footer {
+    flex-grow: 1;
+    background-color: yellow;
+    text-align: left;
+    padding: 1px;
+}
