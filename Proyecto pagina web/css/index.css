@@ -1,0 +1,70 @@
+body{
+    display: grid;
+    grid-template-columns:20% 80% ;
+    grid-template-rows: 15% 75% 10%;
+    height: 100vh;
+    margin: 0;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: 1/3;
+    grid-row: 1/1;
+    margin: 0;
+    background-image:url(https://previews.123rf.com/images/volmon/volmon1903/volmon190300133/124159836-patr%C3%B3n-sin-fisuras-de-hamburguesas-sobre-fondo-blanco-hamburguesa-dibujada-a-mano-y-papas-fritas.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100%;
+
+}
+header h1{
+    font-size: 3em;
+    color:black;
+    background-color: white;
+    border: 2px solid black;
+}
+header img{
+    height: 150px;;
+}
+header nav{
+    display: flex;
+    align-items: center;
+    border: solid 1px brown;
+    background-color: white;
+}
+header a{
+    text-decoration: none;
+    color: coral;
+    padding: 20px;
+}
+header a:hover{
+    color: aqua;
+}
+main{
+    background-color: coral;
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+footer{
+    display: flex;
+    grid-column: 1/3;
+    grid-row: 3/3;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    font-family: sans-serif;
+    font-weight: bold;
+    background-color: black;
+    color: coral;
+}
+footer div a{
+    padding: 0;
+    margin:0
+}
+footer img{
+    height:90px;
+    margin: 0
+    ;
+}
